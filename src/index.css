@@ -36,7 +36,7 @@
     @apply btn bg-brand-700 text-white hover:bg-brand-800;
   }
   .btn-accent {
-    @apply btn bg-flame-500 text-white hover:bg-flame-600;
+    @apply btn bg-flame-700 text-white hover:bg-flame-800;
   }
   .btn-ghost {
     @apply btn bg-white text-ink-700 border border-ink-200 hover:bg-ink-50;

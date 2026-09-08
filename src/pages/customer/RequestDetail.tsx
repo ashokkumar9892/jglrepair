@@ -110,7 +110,7 @@ export default function RequestDetail() {
           >
             {t}
             {t === 'Estimate' && estimate?.status === 'Sent' && (
-              <span className="ml-1.5 inline-block h-2 w-2 rounded-full bg-flame-500 align-middle" />
+              <span className="ml-1.5 inline-block h-2 w-2 rounded-full bg-amber-500 align-middle" />
             )}
             {t === 'Messages' && request.messages.length > 0 && (
               <span className="ml-1.5 text-xs opacity-70">{request.messages.length}</span>

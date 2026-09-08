@@ -5,6 +5,7 @@ export const APPLIANCE_TYPES = [
   'Dishwasher',
   'Oven',
   'Range',
+  'Garbage Disposal',
 ] as const
 export type ApplianceType = (typeof APPLIANCE_TYPES)[number]
 

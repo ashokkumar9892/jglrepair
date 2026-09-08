@@ -36,7 +36,7 @@ const STATUS_TONE: Record<JobStatus, string> = {
   Diagnosed: 'bg-violet-100 text-violet-800',
   'Estimate Ready': 'bg-amber-100 text-amber-900',
   Approved: 'bg-emerald-100 text-emerald-800',
-  'Part Ordered': 'bg-flame-100 text-flame-700',
+  'Part Ordered': 'bg-flame-100 text-flame-800',
   'Repair Scheduled': 'bg-brand-100 text-brand-800',
   Completed: 'bg-emerald-600 text-white',
 }
@@ -81,7 +81,7 @@ export function StatusTracker({ status }: { status: JobStatus }) {
                     done
                       ? 'bg-brand-600 text-white'
                       : active
-                        ? 'bg-flame-500 text-white ring-4 ring-flame-100'
+                        ? 'bg-flame-700 text-white ring-4 ring-flame-100'
                         : 'bg-ink-100 text-ink-400'
                   }`}
                 >

@@ -5,7 +5,9 @@
 > (appliance types serviced, brands serviced, service area). It is **not affiliated with, endorsed
 > by, or connected to any real business**, contains **no proprietary data or source code**, and every
 > customer, technician, address, phone number, job, price, and repair record in it is invented sample
-> data.
+> data. The orange palette and the hexagon placeholder mark in `src/components/Logo.tsx` are an
+> original interpretation drawn for this demo — no real logo, mascot, artwork, or working phone
+> number is reproduced.
 
 A mobile-first proof of concept for running appliance repair service end to end: customer booking →
 technician field work → back-office dispatch.
@@ -13,6 +15,9 @@ technician field work → back-office dispatch.
 ## Stack
 
 React 18 · TypeScript · Vite 5 · Tailwind CSS 3 · `localStorage` persistence · Netlify-ready
+
+Theme: orange primary (`brand`) with a lime/olive accent (`flame`) and a slate neutral (`ink`), set
+once in `tailwind.config.js`.
 
 No backend, no build-time services. All state lives in the visitor's browser.
 
@@ -41,7 +46,8 @@ demo script and a *Reset demo data* button.
 ### Customer portal (`/customer`)
 
 - **New request wizard** (`/customer/new`) — appliance → brand → problem → photos → appointment →
-  review. Appliance types: Refrigerator, Washer, Dryer, Dishwasher, Oven, Range. Problem presets per
+  review. Appliance types: Refrigerator, Washer, Dryer, Dishwasher, Oven, Range, Garbage Disposal —
+  matching the categories a Charlotte shop publicly advertises. Problem presets per
   appliance (Not cooling, Leaking, Not spinning, Making noise, Not heating, Error code, …).
   Submitting generates the next ticket number — **#JGL-1042** on fresh demo data.
 - **Dashboard** — active request hero card, technician, appointment, appliance, problem, estimate,

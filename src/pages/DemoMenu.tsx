@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import { usePortal } from '../store/PortalContext'
 import { adminMetrics } from '../store/selectors'
 import { DemoNotice } from '../components/ui'
+import { Logo } from '../components/Logo'
 import { currency } from '../lib/format'
 
 const ROLES = [
@@ -87,9 +88,7 @@ export default function DemoMenu() {
       <header className="bg-gradient-to-br from-brand-800 via-brand-900 to-ink-900 text-white">
         <div className="mx-auto max-w-5xl px-4 pb-10 pt-8">
           <div className="flex items-center gap-3">
-            <span className="grid h-12 w-12 place-items-center rounded-2xl bg-white/15 text-lg font-extrabold">
-              JGL
-            </span>
+            <Logo size={56} />
             <div>
               <p className="text-xs font-semibold uppercase tracking-widest text-white/60">
                 Proof of concept
@@ -99,10 +98,14 @@ export default function DemoMenu() {
               </h1>
             </div>
           </div>
-          <p className="mt-4 max-w-2xl text-sm leading-relaxed text-white/80">
+          <p className="mt-3 text-sm font-semibold uppercase tracking-wide text-white/90">
+            Professional and fast appliance repair · Charlotte, NC
+          </p>
+          <p className="mt-3 max-w-2xl text-sm leading-relaxed text-white/80">
             A modern, mobile-first concept for how an appliance repair shop in Charlotte, NC could
             run service requests end to end — customer booking, technician field work, and back
-            office dispatch — in one app.
+            office dispatch — in one app. Covers the appliances a local shop actually services:
+            refrigerators, washers, dryers, dishwashers, ovens, ranges, and garbage disposals.
           </p>
           <div className="mt-4 flex flex-wrap gap-2 text-[11px]">
             {['React', 'TypeScript', 'Vite', 'Tailwind CSS', 'localStorage', 'Netlify-ready'].map(
@@ -118,8 +121,9 @@ export default function DemoMenu() {
             This is an independent design exercise built from publicly visible business information
             (appliance types, brands serviced, Charlotte service area). It is not affiliated with,
             endorsed by, or connected to any real business, and it contains no proprietary data or
-            source code. Every customer, technician, job, and dollar figure here is invented sample
-            data.
+            source code. The orange palette and hexagon placeholder mark are an original
+            interpretation — no real logo, artwork, or phone number is reproduced here — and every
+            customer, technician, job, and dollar figure is invented sample data.
           </div>
         </div>
       </header>
@@ -172,7 +176,7 @@ export default function DemoMenu() {
             {SCRIPT.map((s) => (
               <li key={s.step} className="card p-4">
                 <div className="flex gap-3">
-                  <span className="grid h-8 w-8 shrink-0 place-items-center rounded-full bg-flame-500 text-sm font-bold text-white">
+                  <span className="grid h-8 w-8 shrink-0 place-items-center rounded-full bg-flame-700 text-sm font-bold text-white">
                     {s.step}
                   </span>
                   <div>

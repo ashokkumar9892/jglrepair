@@ -1,6 +1,7 @@
 import type { ReactNode } from 'react'
 import { Link, NavLink, useNavigate } from 'react-router-dom'
 import { DemoNotice } from './ui'
+import { Logo } from './Logo'
 import { usePortal } from '../store/PortalContext'
 
 export interface NavItem {
@@ -11,7 +12,7 @@ export interface NavItem {
 }
 
 const ROLE_STYLES = {
-  customer: { bar: 'bg-brand-800', tag: 'Customer' },
+  customer: { bar: 'bg-brand-700', tag: 'Customer' },
   technician: { bar: 'bg-ink-900', tag: 'Technician' },
   admin: { bar: 'bg-brand-900', tag: 'Admin' },
 } as const
@@ -53,12 +54,8 @@ export function AppShell({
                 ←
               </button>
             ) : (
-              <Link
-                to="/"
-                className="shrink-0 grid h-9 w-9 place-items-center rounded-xl bg-white/15 text-sm font-extrabold"
-                title="POC demo menu"
-              >
-                JGL
+              <Link to="/" className="shrink-0" title="POC demo menu" aria-label="POC demo menu">
+                <Logo size={38} />
               </Link>
             )}
             <div className="min-w-0 flex-1">

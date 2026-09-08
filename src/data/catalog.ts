@@ -11,6 +11,7 @@ export const BRANDS = [
   'LG',
   'Maytag',
   'Samsung',
+  'Sears',
   'Speed Queen',
   'Whirlpool',
   'Other',
@@ -47,8 +48,13 @@ export const APPLIANCE_META: Record<
   },
   Range: {
     icon: '🍳',
-    blurb: 'Cooktop + oven combo',
+    blurb: 'Stove, cooktop + oven',
     problems: ['Not heating', 'Burner won\u2019t ignite', 'Making noise', 'Sparking', 'Error code'],
+  },
+  'Garbage Disposal': {
+    icon: '🚰',
+    blurb: 'Under-sink disposal',
+    problems: ['Humming but not running', 'Jammed', 'Leaking', 'Making noise', 'Will not turn on'],
   },
 }
 
@@ -70,6 +76,7 @@ export const COMMON_PARTS = [
   { name: 'Oven igniter', partNumber: 'WB13K21', price: 132 },
   { name: 'Water inlet valve', partNumber: 'WPW10420083', price: 69 },
   { name: 'Control board', partNumber: 'EBR86697502', price: 248 },
+  { name: 'Garbage disposal unit (3/4 hp)', partNumber: 'BADGER-5XP', price: 159 },
 ]
 
 export const DIAGNOSTIC_FEE = 85
