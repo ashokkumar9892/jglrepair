@@ -54,7 +54,7 @@ export function AppShell({
                 ←
               </button>
             ) : (
-              <Link to="/" className="shrink-0" title="POC demo menu" aria-label="POC demo menu">
+              <Link to="/" className="shrink-0" title="Home" aria-label="Home">
                 <Logo size={38} />
               </Link>
             )}

@@ -10,11 +10,11 @@ export default function NotFound() {
         <Logo size={72} tone="dark" />
         <h1 className="mt-3 text-2xl font-extrabold text-ink-900">Page not found</h1>
         <p className="mt-2 text-sm text-ink-600">
-          That screen is not part of this proof of concept. Head back to the demo menu to pick a
-          view.
+          That page is not part of this service portal. Head back to the home page to book a repair or
+          pick a view.
         </p>
         <Link to="/" className="btn-primary mt-6 w-full">
-          Go to the POC demo menu
+          Back to JGL Repair home
         </Link>
         <div className="mt-6">
           <DemoNotice tone="inline" />

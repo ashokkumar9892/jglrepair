@@ -12,12 +12,13 @@
 A mobile-first proof of concept for running appliance repair service end to end: customer booking →
 technician field work → back-office dispatch.
 
-## Stack
+## Stack (developer notes — none of this is surfaced in the UI)
 
 React 18 · TypeScript · Vite 5 · Tailwind CSS 3 · `localStorage` persistence · Netlify-ready
 
 Theme: orange primary (`brand`) with a lime/olive accent (`flame`) and a slate neutral (`ink`), set
-once in `tailwind.config.js`.
+once in `tailwind.config.js`. The app itself reads as an appliance repair service portal — no
+toolchain badges, no "POC" wording on screen.
 
 No backend, no build-time services. All state lives in the visitor's browser.
 
@@ -40,8 +41,10 @@ npm run preview  # serve the production build
 
 ## The three views
 
-Everything is reachable from the **POC Demo Menu** at `/`, which also carries the guided 4-minute
-demo script and a *Reset demo data* button.
+Everything is reachable from the **home page** at `/` — an appliance repair landing page (tagline,
+service area, appliances serviced, brands, *Book a repair* CTA) that also carries the three view
+entry points, a walkthrough of one repair end to end, live shop counts, and a *Reset demo data*
+button.
 
 ### Customer portal (`/customer`)
 
